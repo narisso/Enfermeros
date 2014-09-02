@@ -1,0 +1,13 @@
+div(ng-include='"components/navbar/navbar.html"')
+
+header#banner.hero-unit
+  .container
+    h1 A Chart !
+    p.lead This is the best chart in the world
+    button.btn.btn-primary(ng-click='addRandomMeasure()') Random Measure
+    br
+    br
+
+  .container
+    .chart-wrapper
+      .chart#chart(data-ac-chart="'line'" data-ac-data="data" data-ac-config="config")
